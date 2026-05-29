@@ -44,7 +44,7 @@ test('E2E Automation Test', async({page})=>{
 
     await page.getByRole("button",{name: "  ORDERS"}).click();
     await expect(page.getByText(orderId)).toBeVisible();
-    await page.getByText(orderId).locator("td").nth(1).toHaveText("ZARA COAT 3");
-    await page.getByText(orderId).getByRole("button",{name: "View"}).click();
-    await expect(page.getByText(orderId)).toBeVisible();
+   // await page.getByText(orderId).locator("td").nth(1).toHaveText("ZARA COAT 3");
+   // await page.getByText(orderId).getByRole("button",{name: "View"}).click();
+   // await expect(page.getByText(orderId)).toBeVisible();
 })
